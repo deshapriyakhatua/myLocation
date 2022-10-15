@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             Criteria criteria = new Criteria();
             String provider = locationManager.getBestProvider(criteria, false);
             Location location = locationManager.getLastKnownLocation(provider);
-            Log.d(TAG, provider);
+            //Log.d(TAG, provider);
             //Log.d(TAG, location == null ? "NO LastLocation" : location.toString());
         } catch (SecurityException e) {
             e.printStackTrace();

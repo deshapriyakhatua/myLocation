@@ -254,7 +254,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     }
 
     private void updateUI(Location loc) {
-        Log.d(TAG, "updateUI");
         tvLatitude.setText(Double.toString(loc.getLatitude())+" "+Double.toString(loc.getLongitude()));
         tvTime.setText(DateFormat.getTimeInstance().format(loc.getTime()));
     }
